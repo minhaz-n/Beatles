@@ -1,0 +1,434 @@
+/* ------common css start------ */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+:root{
+    --primary-color:#0872B9;
+    --secoundry-color:#353535;
+    --text-color:#ffffff;
+    --sky-blue:#5BC5F4;
+    --heading:53px;
+    --text-size:19.5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: "Oswald", sans-serif;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ------common css start------ */
+
+/* -----header css start----- */
+#header{
+    width: 100%;
+    background-color: var(--primary-color);
+}
+#header p{
+    font-size: var(--text-size);
+    color: var(--text-color);
+}
+#header p,#header ul{
+    padding: 8px 0;
+    margin: 0;
+}
+#header ul li a{
+    padding-left: 25px;
+    color: var(--text-color);
+    font-size: var(--text-size);
+}
+/* -----header css ends----- */
+
+/* -----navbar css start----- */
+.navbar{
+    padding: 19px 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+    padding-left: 18px;
+    color: black;
+    transition: all linear .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: var(--primary-color);
+}
+/* -----navbar css ends----- */
+
+/* -----banner css start----- */
+#banner{
+    width: 100%;
+    background-image: url(../Images/01-Beatles-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 102px 0;
+}
+.banner-text{
+    color: var(--text-color);
+}
+.banner-text h2{
+    font-size: var(--heading);
+}
+.banner-text p{
+    font-size: var(--text-size);
+    margin-bottom: 50px;
+}
+.banner-text button{
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    transition: all linear .3s;
+    margin-left: 25px;
+}
+.banner-text button:hover{
+    background-color: var(--primary-color);
+}
+.banner-text button a{
+    color: var(--text-color);
+    font-size: var(--text-color);
+    font-weight: bold;
+    padding: 15px 25px;
+    background-color: transparent;
+}
+/* -----banner css ends----- */
+
+/* -----about css start----- */
+#about{
+    width: 100%;
+    padding: 55px 0;
+}
+.about-head img{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+.about-head h2{
+    padding: 0;
+    margin: 0;
+    font-size: var(--heading);
+}
+.about-img img{
+    width: 100%;
+}
+.about-text{
+    display: flex;
+    align-items: center;
+}
+.about-text p{
+    font-size: var(--text-color);
+}
+/* -----about css ends----- */
+
+/* -----service css start----- */
+#service{
+    width: 100%;
+    padding: 95px 0;
+}
+.service-head h2{
+    font-size: var(--heading);
+}
+.service-head img{
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+.service-pack{
+    width: 100%;
+    background-color: #F1F1F1;
+    position: relative;
+    transition: all linear .3s;
+    margin-top: 35px;
+    border-radius: 5px;
+}
+.service-pack:hover{
+    box-shadow: -1px 2px 5px 5px rgba(0,0,0,0.42);
+}
+.service-pack:hover .service-img{
+    background-color: var(--primary-color);
+}
+.service-img{
+    width: 70px;
+    height: 70px;
+    line-height: 60px;
+    background-color: #F1F1F1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15%;
+    border: 5px solid var(--text-color);
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.service-text h3{
+    padding: 50px 20px 20px 20px;
+}
+.service-text{
+    padding: 0 20px 20px 20px;
+}
+/* -----service css ends----- */
+
+/* -----portfolio css start----- */
+#portfolio{
+    padding: 45px 0;
+}
+.portfolio-head{
+    padding-bottom: 35px;
+}
+.portfolio-head h2{
+    font-size: var(--heading);
+    font-weight: bold;
+}
+.portfolio-head img{
+    margin-bottom: 35px;
+    margin-right: 200px;
+}
+.portfolio-item{
+    position: relative;
+}
+.portfolio-item,.portfolio-item img{
+    width: 100%;
+    height: 250px;
+}
+.portfolio-item_{
+    position: relative;
+}
+.portfolio-item_,.portfolio-item_ img{
+    width: 100%;
+    height: 350px;
+}
+.overley{
+    width: 100%;
+    height: 100%;
+    background-color: #292626a6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .8s ease-in-out;
+}
+.overley img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    cursor: pointer;
+}
+.portfolio-item:hover .overley,.portfolio-item_:hover .overley{
+    opacity: 1;
+}
+
+/* -----portfolio css ends----- */
+
+/* -----team css start----- */
+#team{
+    padding: 90px 0;
+}
+.team-head h2{
+    font-size: var(--heading);
+}
+.team-head img{
+    margin-bottom: 25px;
+    margin-right: 80px;
+}
+.team-member{
+    width: 100%;
+    position: relative;
+    transition: .3s all linear;
+}
+.team-member img{
+    width: 100%;
+}
+.team-member h3{
+    font-size: 25px;
+    transition: .3s all linear;
+}
+.team-member p{
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s all linear;
+}
+.team-overlay{
+    width: 0%;
+    background-color: #000000a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.team-member:hover{
+    color: var(--primary-color);
+}
+.team-member:hover .team-overlay{
+    width: 30%;
+    opacity: 1;
+}
+.team-overlay i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    margin: 15px 0;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 50px;
+    transition: .3s all linear;
+}
+.team-overlay i:hover{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+/* -----team css ends----- */
+
+/* -----testimonial css start----- */
+#testimonial{
+    padding: 55px 0;
+}
+.testimonial-head h2{
+    font-size: var(--heading);
+}
+.testimonial-head  img{
+    margin-bottom: 25px;
+    margin-right: 80px;
+}
+.testimonial-say h3,.testimonial-say p,.testimonial-say {
+    padding: 0;
+    margin: 0;
+}
+.testimonial-say{
+    background-color: #F1F1F1;
+    padding: 20px 15px;
+    margin-top: 45px;
+    position: relative;
+}
+.testimonial-say p{
+    font-family: "Oswald", sans-serif;
+    padding-top: 10px;
+}
+.testimonial-say h3{
+    font-size: 25px;
+}
+.testimonial-say::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #F1F1F1;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* -----testimonial css ends----- */
+
+/* -----footer css start----- */
+#footer{
+    width: 100%;
+    background-color: #353535;
+    padding: 32px 0;
+}
+.footer-1 img{
+    width: 120px;
+    padding-bottom: 25px;
+}
+.footer-1 p{
+    font-size: var(--text-size);
+    color: var(--text-color);
+}
+.footer-2{
+    color: var(--text-color);
+    font-size: var(--text-size);
+}
+.footer-2 ul{
+    padding: 0;
+}
+.footer-2 ul li i{
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.details p{
+    margin: 0;
+}
+.footer-3{
+    font-size: var(--text-size);
+    color: var(--text-color);
+    margin: 0;
+}
+.important-link  ul:first-child{
+    padding: 0;
+}
+.footer-3 a{
+    color: var(--text-color);
+    font-size: var(--text-size);
+}
+.footer-4{
+    color: var(--text-color);
+    font-size: var(--text-size);
+}
+.f-img{
+    width: 100%;
+}
+.f-img img{
+    width: 100%;
+}
+#copyright{
+    width: 100%;
+    background-color: #555555;
+}
+.copyright p{
+    font-size: 17px;
+    color: var(--text-color);
+    padding-top: 12px;
+}
+/* -----footer css ends----- */
+/* -----Responsive------- */
+@media (max-width: 575.98px) {
+    .about-head h2{
+        font-size: 20px;
+    }
+    .about-text p{
+        font-size: 16px;
+    }
+    .service-head h2{
+        font-size: 20px;
+    }
+    .service-text{
+        margin-bottom: 20px;
+    }
+    .service-text h3{
+        font-size: 18px;
+    }
+    .portfolio-head h2,.team-head h2,.testimonial-head h2{
+        font-size: 20px;
+    }
+    .team-head img,.portfolio-head img,.service-head img, .about-head img,.testimonial-head img{
+        margin-right: 0;
+    }
+    .team-member h3{
+        font-size: 20px;
+    }
+    .team-member p{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .team-overlay{
+        display: none;
+    }
+}
+/* -----Responsive------- */
